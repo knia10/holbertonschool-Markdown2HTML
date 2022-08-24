@@ -5,6 +5,7 @@ Write a script markdown2html.py that takes an argument 2 strings:
 First argument is the name of the Markdown file
 Second argument is the output file name
 '''
+
 from sys import argv
 from os import path
 import markdown
@@ -17,8 +18,6 @@ if __name__ == "__main__":
         elif path.isfile(argv[1]) is False:
             print(f"Missing {argv[1]}")
             exit(1)
-
-
 
         with open('README.md', 'r') as e:
             text = e.read()

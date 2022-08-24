@@ -11,6 +11,7 @@ from os import path
 import markdown
 from markdown import markdown
 if __name__ == "__main__":
+    '''function for markdown'''
     def uso():
         if len(argv) < 3:
             print("Usage: ./markdown2html.py README.md README.html")
